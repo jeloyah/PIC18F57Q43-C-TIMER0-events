@@ -9,6 +9,7 @@
       <itemPath>main.h</itemPath>
       <itemPath>adc.h</itemPath>
       <itemPath>timer0.h</itemPath>
+      <itemPath>/home/edson/Documents/MPLABXprojects/MPLABX-C-TIMER0-events-git/C-TIMER0-Events.X/pps.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -27,6 +28,7 @@
       <itemPath>configbits.c</itemPath>
       <itemPath>clock.c</itemPath>
       <itemPath>timer0.c</itemPath>
+      <itemPath>/home/edson/Documents/MPLABXprojects/MPLABX-C-TIMER0-events-git/C-TIMER0-Events.X/pps.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -37,13 +39,13 @@
         <targetDevice>PIC18F57Q43</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>nEdbgTool</platformTool>
+        <platformTool>noID</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>2.50</languageToolchainVersion>
+        <languageToolchainVersion>3.10</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.24.430"/>
+        <pack name="PIC18F-Q_DFP" vendor="Microchip" version="1.28.451"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -109,15 +111,24 @@
       <HI-TECH-LINK>
         <property key="additional-options-checksum" value=""/>
         <property key="additional-options-checksumAVR" value=""/>
+        <property key="additional-options-checksumAVR2" value="0"/>
         <property key="additional-options-code-offset" value=""/>
         <property key="additional-options-command-line" value=""/>
         <property key="additional-options-errata" value=""/>
         <property key="additional-options-extend-address" value="false"/>
+        <property key="additional-options-fillAVR2" value="0"/>
         <property key="additional-options-trace-type" value=""/>
         <property key="additional-options-use-response-files" value="false"/>
         <property key="backup-reset-condition-flags" value="false"/>
         <property key="calibrate-oscillator" value="false"/>
         <property key="calibrate-oscillator-value" value="0x3400"/>
+        <property key="checksum-flash-options-addressce" value=""/>
+        <property key="checksum-flash-options-addresscs" value=""/>
+        <property key="checksum-flash-options-algorithmc"
+                  value="Select checksum algorithm"/>
+        <property key="checksum-flash-options-destc" value=""/>
+        <property key="checksum-flash-options-offsetc" value="0xFFFF"/>
+        <property key="checksum-flash-options-widthc" value="2"/>
         <property key="clear-bss" value="true"/>
         <property key="code-model-external" value="wordwrite"/>
         <property key="code-model-rom" value=""/>
@@ -133,12 +144,16 @@
         <property key="display-psect-usage" value="false"/>
         <property key="extra-lib-directories" value=""/>
         <property key="fill-flash-options-addr" value=""/>
+        <property key="fill-flash-options-addrfe" value=""/>
+        <property key="fill-flash-options-addrfs" value=""/>
         <property key="fill-flash-options-const" value=""/>
+        <property key="fill-flash-options-constf" value=""/>
         <property key="fill-flash-options-how" value="0"/>
         <property key="fill-flash-options-inc-const" value="1"/>
         <property key="fill-flash-options-increment" value=""/>
         <property key="fill-flash-options-seq" value=""/>
         <property key="fill-flash-options-what" value="0"/>
+        <property key="fill-flash-options-wwidthf" value="2"/>
         <property key="format-hex-file-for-download" value="false"/>
         <property key="initialize-data" value="true"/>
         <property key="input-libraries" value="libm"/>
@@ -682,6 +697,8 @@
         <property key="periphComp5.gte" value="gt"/>
         <property key="periphComp6.gte" value="gt"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="/home/edson/Documents/MPLABXprojects/MPLABX-C-TIMER0-events-git/C-TIMER0-Events.X/debug/default/C-TIMER0-Events_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -1196,8 +1213,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-1ffff"/>
         <property key="poweroptions.powerenable" value="false"/>
-        <property key="programmerToGoFilePath"
-                  value="/home/edson/Documents/MPLABXprojects/MPLABX-C-TIMER0-events-git/C-TIMER0-Events.X/debug/default/C-TIMER0-Events_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

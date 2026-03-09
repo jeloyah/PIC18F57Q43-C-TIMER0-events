@@ -4,6 +4,7 @@
 #include "clock.h"
 #include "gpio.h"
 #include "timer0.h"
+#include "pps.h"
 
 void main(void) {
     
@@ -30,6 +31,8 @@ void main(void) {
     
     /* Config TIMER0 */
     TIMER0_Initialize();
+    
+    PPS_Initialize();
        
     /* infinite loop */
     while(1)
@@ -43,7 +46,7 @@ void main(void) {
         PIR3 &= 0x7F;
         
         /* Toggle LED in RF3 */
-        //LATF ^= 0x08;
+        LATF ^= 0x08;
        
      } /* while */
         

@@ -1,14 +1,19 @@
 #include <xc.h>
 #include "timer0.h"
+#include "pps.h"
 
 /* Config Timer0 */
 void TIMER0_Initialize(void)
 {
+    PPS_unlock();
+        
     /* T0CKI signal is mapped to RA4 */
 	T0CKIPPS = 0x04;
          
     /* Timer0 output is on RF3 */
     RF3PPS=0x39;
+    
+    PPS_lock();
     
     /* Timer0 disabled; 8-bit; no postscaler */
     T0CON0 = 0x00; 
